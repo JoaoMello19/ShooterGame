@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@400;700&display=swap');
+
+:root {
+	--bg-color: #222;
+	--bg-pane: #333;
+	--border-radius: 20px;
+}
+
+* {
+	margin: auto;
+	box-sizing: border-box;
+	border: none;
+
+	font-size: 2.5vmin;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+
+	/* border: 1px solid cyan; */
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	background-color: var(--bg-color);
+}
+
+.menu-pane {
+	width: 60vmin;
+	aspect-ratio: 3 / 4;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bg-pane);
+}
+
+.rounded {
+	border-radius: var(--border-radius);
+}
+
+h1 {
+	color: #FD5;
+	font-size: 5vmin;
+}
+
+h2 {
+	color: #F76;
+	font-size: 3.5vmin;
+}
+
+.titles {
+	text-align: center;
+}
+
+.btn-row {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+}
+
+button {
+	aspect-ratio: 8;
+	flex-grow: 1;
+	cursor: pointer;
+}
+
+.btn-green {
+	background-color: #284;
+}
+
+.play-icon {
+	height: 75%;
+	aspect-ratio: 1;
+	background-color: white;
+	clip-path: polygon(0 0, 100% 50%, 0 100%, 0 0);
+}
+
+/* MAIN PANE */
+
+#instructions {
+	height: 50%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bg-color);
+}
+
+ol {
+	padding: 0;
+}
+
+li {
+	line-height: 2;
+}
+
+#game, #pause, #lost {
+	display: none;
+}
